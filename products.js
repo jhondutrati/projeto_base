@@ -33,5 +33,16 @@ listar.forEach(listar => {
     console.log(listar);
 })
 
+function valor (value){
+    if (value.valor >= 0 && value.valor <= 1000) 
+    return value;
+    else {
+        console.log("fora da faixa selecionada")
+    }
+}
+var valor = produtos.filter(valor);
+valor.forEach(valor => { 
+    console.log(valor);
+})
 
 
