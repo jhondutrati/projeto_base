@@ -24,11 +24,14 @@ const produtos = [
 ]
 
 
-function listar() {
-    produtos.forEach(p => {
-        console.log(p)
-    })
+function listar (value){
+    if (value.categoria == "Eletrônico")
+    return value;
 }
+var listar = produtos.filter(listar);
+listar.forEach(listar => { 
+    console.log(listar);
+})
 
 
 
